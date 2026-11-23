@@ -1,0 +1,1 @@
+COLORS = { 'b' : 'Blue', 'g' : 'Green', 'r' : 'Red', 'c' : 'Cyan', 'm' : 'Magenta', 'y' : 'Yellow'}
