@@ -4,7 +4,7 @@ from constants import WINDOW_HEIGHT, WINDOW_WIDTH
 
 if __name__ == '__main__':
     screen = Screen()
-    screen.setup(width = WINDOW_WIDTH, height = WINDOW_HEIGHT)
+    screen.setup(width = WINDOW_WIDTH, height = WINDOW_WIDTH)
     screen.bgcolor("black")
 
     turtles_race = TurtlesRace()

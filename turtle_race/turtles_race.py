@@ -1,7 +1,7 @@
 import random
 from turtle import Turtle
 import matplotlib.colors as mcolors
-from constants import COLORS, Y_POSITION, X_POSITION
+from constants import COLORS, Y_POSITION, X_POSITION, FINISH_LINE
 
 
 class TurtlesRace:
@@ -22,7 +22,7 @@ class TurtlesRace:
             new_turtle = Turtle(shape="turtle")
             new_turtle.color(self.__arr_colors[i])
             new_turtle.penup()
-            new_turtle.goto(x=-350, y = Y_POSITION[i])
+            new_turtle.goto(x = X_POSITION, y = Y_POSITION[i])
             self.__turtles.append(new_turtle)
 
     def start_turtle_race(self, user_input):
@@ -32,7 +32,7 @@ class TurtlesRace:
         while self.__is_race_on:
             for tr in self.__turtles:
                 # race ends at 330 pixel x position - finish line
-                if tr.xcor() > X_POSITION:
+                if tr.xcor() > FINISH_LINE:
                     winning_color = tr.pencolor()
                     if winning_color.lower() == user_input.lower():
                         print(f"You've won! The {winning_color} turtle is the winner!")
