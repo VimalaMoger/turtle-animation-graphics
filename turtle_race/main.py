@@ -1,11 +1,10 @@
 from turtle import Turtle, Screen
 from turtles_race import TurtlesRace
-
-
+from constants import WINDOW_HEIGHT, WINDOW_WIDTH
 
 if __name__ == '__main__':
     screen = Screen()
-    screen.setup(width = 800, height = 600)
+    screen.setup(width = WINDOW_WIDTH, height = WINDOW_HEIGHT)
     screen.bgcolor("black")
 
     turtles_race = TurtlesRace()

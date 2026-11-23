@@ -37,7 +37,7 @@ class TurtlesRace:
                     if winning_color.lower() == user_input.lower():
                         print(f"You've won! The {winning_color} turtle is the winner!")
                     else:
-                        print(f"You loose! The {winning_color} turtle is the winner!")
+                        print(f"You loose. The {winning_color} turtle is the winner!")
                     self.__is_race_on = False
                 # Each turtle moves rand_distance pixels in the direction it is facing
                 rand_distance = random.randint(0, 10)
