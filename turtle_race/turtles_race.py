@@ -17,7 +17,7 @@ class TurtlesRace:
         return self.__arr_colors
 
     def make_turtle_move(self):
-        # We need 6 turtles starting from the same line
+        # This positions each turtle at the start line
         for i in range(0, 6):
             new_turtle = Turtle(shape="turtle")
             new_turtle.color(self.__arr_colors[i])
@@ -31,7 +31,7 @@ class TurtlesRace:
             self.__is_race_on = True
         while self.__is_race_on:
             for tr in self.__turtles:
-                # race ends at 330 pixel x position
+                # race ends at 330 pixel x position - finish line
                 if tr.xcor() > X_POSITION:
                     winning_color = tr.pencolor()
                     if winning_color.lower() == user_input.lower():
